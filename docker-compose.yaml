@@ -1,0 +1,17 @@
+name: streamlit-introduction
+
+services:
+  streamlit-app:
+    build:
+      context: app/
+      dockerfile: Dockerfile
+    container_name: streamlit-intro
+    ports:
+      - "8080:8501"
+    volumes:
+      - ./app:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+      - WATCHPACK_POLLING=true
+    restart: unless-stopped
+
