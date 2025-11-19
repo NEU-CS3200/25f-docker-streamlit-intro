@@ -1,5 +1,4 @@
 streamlit
-streamlit-extras
-extra-streamlit-components
-requests
 plotly
+requests
+pandas
